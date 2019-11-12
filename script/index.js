@@ -1,10 +1,10 @@
-class Fighter {
-  constructor(name, charaName) {
-    //'contructor' is in all JS classes
-    // It gets run immediately when a new object is created from a class
+class object fighter() {
+  constructor(name, charaName){
+    //'constructor' is in all JS classes
+    // It gets run immediately
 
-    // Set all of our deafult values for this new fighter here
-    this.name = name;
+    // Set all of our default values for this new fighter here
+     name = name;
     this.hp = 20;
     this.sp = 10;
     this.atk = 5;
@@ -12,41 +12,27 @@ class Fighter {
     this.tek = 5;
     this.charaName = charaName;
   }
+
   attack(target) {
-    console.log(this.name + " attacked " + target.name)
+    console.log("Attacked!");
   }
-  single(target) {
-    this.attack(target);
+  single(){
+    this.attack();
   }
-  double(target) {
-    this.attack(target);
-    this.attack(target);
+  double(){
+    this.attack()
+    this.attack();
   }
-  recover() {
-    console.log("Recovered!")
+  recover(){
+    console.log("Recovered!");
+
   }
 }
-
 
 let Player0;
-let Player1;
 
-function startup() {
-  Player0 = new Fighter("Crash", "crashr");
-  Player1 = new Fighter("Sam", "saml");
+function startup(){
+ Player0 = newFighter("Crash", "crashr");
 
-  console.log("My name is " + Player0.name + " and my ATK is " + Player0.atk)
-  console.log("My name is " + Player1.name + " and my ATK is " + Player1.atk)
+console.log("My name is "   + Player0.name + " and my ATK is ");
 }
-
-
-
-
-
-
-
-
-/*
-MHW = 'delicious'
-MHWoutput > MHWinput
-*/
