@@ -12,16 +12,6 @@ const P1CHARA = "saml"
 let playerTurn = false;
 let logging = true;
 
-let Player0;
-let Player1;
-
-let gameBox;
-let headerBox;
-let graphicsBox;
-let barsBox;
-let controlsBox;
-let outputBox;
-
 class Fighter {
   constructor(name, charaName) {
     //'contructor' is in all JS classes
@@ -53,6 +43,7 @@ class Fighter {
   }
 }
 
+
 function startup() {
   Player0 = new Fighter(P0NAME, P0CHARA);
   Player1 = new Fighter(P1NAME, P1CHARA);
@@ -68,4 +59,6 @@ function startup() {
   graphicsBox.innerHTML += '<img id ="' + Player1.charaName + '" src="img/' + Player1.charaName + '_idle.png" alt="' + Player1.name + '" class="fighterIMG">'
 
 console.log("My name is "   + Player0.name + " and my ATK is ");
+console.log("My name is "   + Player1.name + " and my ATK is ");
+
 }
