@@ -45,14 +45,12 @@ class Fighter {
 
 let Player0;
 
-<<<<<<< HEAD
-function startup(){
- Player0 = newFighter("Crash", "crashr");
-=======
 function startup() {
   Player0 = new Fighter(P0NAME, P0CHARA);
   Player1 = new Fighter(P1NAME, P1CHARA);
->>>>>>> upstream/Release-Candidate
 
+document.getElementById('graphicsBox').innerHTML = '<img src="img/' + Player0.charaName' + ''
 console.log("My name is "   + Player0.name + " and my ATK is ");
+console.log("My name is "   + Player1.name + " and my ATK is ");
+
 }
