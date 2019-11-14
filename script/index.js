@@ -1,13 +1,14 @@
+
 const START_HP = 20;
 const START_SP = 10;
 const DEFAULT_ATK = 5;
 const DEFAULT_DEF = 5;
 const DEFAULT_TEK = 5;
 
-const P0NAME = "Crash"
-const P0CHARA = "crashr"
-const P1NAME = "Sam"
-const P1CHARA = "saml"
+const P0NAME = 'Crash'
+const P0CHARA = 'crashr'
+const P1NAME = 'Sam'
+const P1CHARA = 'saml'
 
 let playerTurn = false;
 let logging = true;
@@ -28,7 +29,7 @@ class Fighter {
   }
 
   attack(target) {
-    console.log("Attacked!");
+    console.log(this.name + ' attacked ' + target.name)
   }
   single(){
     this.attack();
@@ -37,9 +38,8 @@ class Fighter {
     this.attack()
     this.attack();
   }
-  recover(){
-    console.log("Recovered!");
-
+  recover() {
+    console.log('Recovered!')
   }
 }
 
