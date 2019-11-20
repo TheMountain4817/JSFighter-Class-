@@ -161,10 +161,19 @@ function updateBars() {
   barsBox.innerHTML += '<div class="spBar"><div style="height:' + player1PercentSP + '%; width: 100%;" id="p1SPfill" class="SPfill"></div></div>'
 }
 
+// EndTurn code
+function endTurn() {
+  playerTurn = !playerTurn
+  if (kocheck(Player0, 0) || kocheck(Player1, 0)){
+    hideControls();
+  }
+}
+
 function hideContols() {
   controlsBox.innerHTML = "";
 }
 
+<<<<<<< HEAD
  function koCheck(target){
    if (this.hp <= 0) {
       return true }
@@ -177,6 +186,11 @@ function hideContols() {
  function endturn() {
 
  }
+=======
+
+
+
+>>>>>>> upstream/Release-Candidate
 
 
 /*
