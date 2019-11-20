@@ -97,14 +97,14 @@ function showControls() {
  function koCheck(target){
    if (this.hp <= 0) {
       return true }
- eliif  (this.hp > 0 ){
+ eliif  (this.hp > 0 )
     return false
 }
-  }
-    }
+
+
 
  function endturn() {
-   
+
  }
 
 
