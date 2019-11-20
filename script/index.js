@@ -13,8 +13,6 @@ const P1CHARA = 'saml'
 let playerTurn = false;
 let logging = true;
 
-<<<<<<< HEAD
-=======
 let Player0;
 let Player1;
 
@@ -26,7 +24,6 @@ let barsBox;
 let controlsBox;
 let outputBox;
 
->>>>>>> upstream/Release-Candidate
 class Fighter {
   constructor(name, charaName) {
     //'contructor' is in all JS classes
@@ -42,21 +39,10 @@ class Fighter {
     this.charaName = charaName;
   }
 
-<<<<<<< HEAD
-=======
   //this logs who attacked who
->>>>>>> upstream/Release-Candidate
   attack(target) {
     console.log(this.name + ' attacked ' + target.name);
   }
-<<<<<<< HEAD
-  single(){
-    this.attack();
-  }
-  double(){
-    this.attack()
-    this.attack();
-=======
 
   single(target) {
     this.attack(target);
@@ -65,7 +51,6 @@ class Fighter {
   double(target) {
     this.attack(target);
     this.attack(target);
->>>>>>> upstream/Release-Candidate
   }
 
   //this logs that they recovered
@@ -91,12 +76,6 @@ function startup() {
   graphicsBox.innerHTML = '<img id ="' + Player0.charaName + '" src="img/' + Player0.charaName + '_idle.png" alt="' + Player0.name + '" class="fighterIMG">'
   graphicsBox.innerHTML += '<img id ="' + Player1.charaName + '" src="img/' + Player1.charaName + '_idle.png" alt="' + Player1.name + '" class="fighterIMG">'
 
-<<<<<<< HEAD
-console.log("My name is "   + Player0.name + " and my ATK is ");
-console.log("My name is "   + Player1.name + " and my ATK is ");
-
-}
-=======
 
   console.log("My name is " + Player0.name + " and my ATK is " + Player0.atk)
   console.log("My name is " + Player1.name + " and my ATK is " + Player1.atk)
@@ -115,6 +94,20 @@ function showControls() {
   }
 }
 
+ function koCheck(target){
+   if (this.hp <= 0) {
+      return true }
+ eliif  (this.hp > 0 ){
+    return false
+}
+  }
+    }
+
+ function endturn() {
+   
+ }
+
+
 /*
 
 MHW = 'delicious'
@@ -122,4 +115,3 @@ MHW = 'delicious'
 MHWoutput > MHWinput
 
 */
->>>>>>> upstream/Release-Candidate
