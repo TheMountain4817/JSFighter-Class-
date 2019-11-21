@@ -3,25 +3,20 @@ const START_SP = 10;
 const DEFAULT_ATK = 5;
 const DEFAULT_DEF = 5;
 const DEFAULT_TEK = 5;
-
 //sets constants names
 const P0NAME = 'Crash'
 const P0CHARA = 'crashr'
 const P1NAME = 'Sam'
 const P1CHARA = 'saml'
-
 let playerTurn = false;
 let logging = true;
-
 let Player0;
 let Player1;
-
 //varible for finding % of players HP used for the HealthBar
 let player0PercentHP;
 let player1PercentHP;
 let player0PercentSP;
 let player1PercentSP;
-
 // declared variables for the boxes
 let gameBox;
 let headerBox;
